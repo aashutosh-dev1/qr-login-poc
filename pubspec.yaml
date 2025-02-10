@@ -1,0 +1,35 @@
+name: qr_login_poc
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ferry: ^0.16.0+1
+  gql_http_link: ^1.1.0
+  gql_dio_link: ^1.0.1+1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  ferry_hive_store: ^0.5.0
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+  equatable: ^2.0.7
+  get_it: ^8.0.3
+  qr_bar_code: ^1.3.0
+  gql_websocket_link: ^2.0.1
+  qr_code_scanner: ^0.4.0
+  dio: ^5.8.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  ferry_generator: ^0.10.0
+
+flutter:
+  uses-material-design: true
