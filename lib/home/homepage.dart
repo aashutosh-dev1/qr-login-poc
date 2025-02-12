@@ -12,7 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final devId = 'id017';
+  String devId = '';
+
+  final controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,6 +50,20 @@ class _HomePageState extends State<HomePage> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextField(
+                    controller: controller,
+                    onChanged: (value) {
+                      setState(() {
+                        devId = value;
+                      });
+                    },
+                  ),
+                ),
+                SizedBox(height: 8),
+                Text(devId),
+                SizedBox(height: 8),
                 Center(
                   child: ElevatedButton(
                     onPressed: () {
